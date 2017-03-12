@@ -48,11 +48,12 @@ nmap <C-\>i :cs find i^ <C-R>=expand("<cfile>")<CR>$<CR>
 nmap <C-\>d :cs find d <C-R>=expand("<cword>")<CR><CR>
 nmap <C-\>c :cs find c <C-R>=expand("<cword>")<CR><CR>
 
-
-nmap <F8> :cw<cr>
+"quickfix conf
+":help quickfix
 nmap <F6> :cn<cr>
 nmap <F7> :cp<cr>
-
+nmap <F8> :botright cwindow<cr>
+nmap <F9> :ccl<cr>
 
 
 "设置导航开启文件
