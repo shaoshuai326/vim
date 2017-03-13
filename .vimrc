@@ -2,6 +2,8 @@
 syntax enable
 syntax on
 
+set noswapfile
+
 "ctags 配置，使用此功能，需要安装 ctags 软件
 map <F5> :!ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .<CR><CR> :TlistUpdate<CR>
 imap <F5> <ESC> :!ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .<CR><CR> :TlistUpdate<CR>
